@@ -81,14 +81,14 @@ params:
   tiles:
     enable: yes
     showcase:
-      - image: pic01.jpg
+      - image: lbs.jpg
         subtitle: That's a nice picture
-        title: Aliquam
+        title: About me
         url: blogs/aliquam
       - image: pic02.jpg
         subtitle: Feugiat Amet Tempus
-        title: Tempus
-        url: blogs/tempus
+        title: Risk Return of DJIA
+        url: blogs/risk_return
       - image: pic03.jpg
         subtitle: Lorem Etiam Nullam
         title: Magna
@@ -106,7 +106,7 @@ params:
         title: Etiam
         url: blogs/ipsum
   two:
-    buttonText: Get Started
+    buttonText: Start here
     enable: yes
     subtitle: "Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero.
       \n    Mauris aliquet magna magna sed nunc rhoncus pharetra. \n    Pellentesque
