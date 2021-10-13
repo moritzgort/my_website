@@ -21,7 +21,7 @@ params:
     buttonClear: Clear
     buttonSend: Send message
     email:
-      - email: example@domain.com
+      - email: moritz@gort.com
         title: Email
     enable: yes
     phone:
