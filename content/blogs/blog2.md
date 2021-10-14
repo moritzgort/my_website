@@ -11,9 +11,14 @@ slug: sports
 title: Sports that I like
 ---
 
-I like football and played it throughout my childhood. Additionally, I like doing calishtenics and skiing. During my time at LBS, I started playing rugby.
-
+I like football and played it throughout my childhood...
 ![Football](/img/blogs/football.jpg)
+
+...additionally, I like doing calishtenics to keep myself in shape...
 ![Calisthenics](/img/blogs/calisthenics.jpg)
+
+...as an Austrian, of course, I have to like skiing...
 ![Skiing](/img/blogs/skiing.jpg)
+
+...during my time at LBS, I also started playing rugby.
 ![Rugby](/img/blogs/rugby.jpg)
