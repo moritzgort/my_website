@@ -33,7 +33,7 @@ params:
   error404:
     heading: Page couldn't be found
     text: Please visit [this page](/)
-  favicon: favicon.ico
+  favicon: lbs_logo.jpg
   footer:
     copyright: Company Name
     enable: yes
@@ -82,9 +82,9 @@ params:
     enable: yes
     showcase:
       - image: lbs.jpg
-        subtitle: That's a nice picture
+        subtitle: Get an insight into what I am doing
         title: About me
-        url: blogs/aliquam
+        url: blogs/aboutme
       - image: pic02.jpg
         subtitle: Feugiat Amet Tempus
         title: Risk Return of DJIA
