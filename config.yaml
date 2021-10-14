@@ -34,7 +34,7 @@ params:
     text: Please visit [this page](/)
   favicon: lbs_logo.jpg
   footer:
-    copyright: Company Name
+    copyright: Moritz Gort
     enable: yes
     quicklinks:
       - alt: HTML5 UP
