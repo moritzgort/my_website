@@ -62,7 +62,7 @@ params:
   navigation:
     button1:
       - name: Go to R projects
-        url: blogs/r_projects
+        url: r_projects
     button2:
       - name: Log In
         url: '#'
