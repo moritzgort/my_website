@@ -35,6 +35,7 @@ ggplot(tidyweather, aes(x=date, y = delta))+
   labs (
     title = &quot;Weather Anomalies&quot;
   )</code></pre>
+<p><img src="/blogs/weather_anomalies_files/figure-html/scatter_plot-1.png" width="648" style="display: block; margin: auto;" /></p>
 <pre class="r"><code>comparison &lt;- tidyweather %&gt;% 
   filter(Year&gt;= 1881) %&gt;%     #remove years prior to 1881
   #create new variable &#39;interval&#39;, and assign values based on criteria below:
@@ -52,6 +53,7 @@ ggplot(tidyweather, aes(x=date, y = delta))+
     title = &quot;Density Plot for Monthly Temperature Anomalies&quot;,
     y     = &quot;Density&quot;         #changing y-axis label to sentence case
   )</code></pre>
+<p><img src="/blogs/weather_anomalies_files/figure-html/density_plot-1.png" width="648" style="display: block; margin: auto;" /></p>
 <p>So far, we have been working with monthly anomalies. However, we might be interested in average annual anomalies. We can do this by using <code>group_by()</code> and <code>summarise()</code>, followed by a scatter plot to display the result.</p>
 <pre class="r"><code>#creating yearly averages
 average_annual_anomaly &lt;- tidyweather %&gt;% 
@@ -74,3 +76,4 @@ ggplot(average_annual_anomaly, aes(x=Year, y= annual_average_delta))+
     title = &quot;Average Yearly Anomaly&quot;,
     y     = &quot;Average Annual Delta&quot;
   )                         </code></pre>
+<p><img src="/blogs/weather_anomalies_files/figure-html/averaging-1.png" width="648" style="display: block; margin: auto;" /></p>

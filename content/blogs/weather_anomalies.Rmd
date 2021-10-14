@@ -71,7 +71,7 @@ tidyweather <- weather %>%
 
 
 
-```{r scatter_plot, eval=FALSE}
+```{r scatter_plot}
 
 tidyweather <- tidyweather %>%
   mutate(date = ymd(paste(as.character(Year), Month, "1")),
@@ -92,7 +92,7 @@ ggplot(tidyweather, aes(x=date, y = delta))+
 
 
 
-```{r intervals, eval=FALSE}
+```{r intervals}
 
 comparison <- tidyweather %>% 
   filter(Year>= 1881) %>%     #remove years prior to 1881
@@ -108,7 +108,7 @@ comparison <- tidyweather %>%
 ```
 
 
-```{r density_plot, eval=FALSE}
+```{r density_plot}
 
 ggplot(comparison, aes(x=delta, fill=interval))+
   geom_density(alpha=0.2) +   #density plot with tranparency set to 20%
@@ -122,7 +122,7 @@ ggplot(comparison, aes(x=delta, fill=interval))+
 
 So far, we have been working with monthly anomalies. However, we might be interested in average annual anomalies. We can do this by using `group_by()` and `summarise()`, followed by a scatter plot to display the result. 
 
-```{r averaging, eval=FALSE}
+```{r averaging}
 
 #creating yearly averages
 average_annual_anomaly <- tidyweather %>% 
