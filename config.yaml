@@ -98,7 +98,7 @@ params:
       - image: pic05.jpg
         subtitle: Get an insight into the volatility of a selection of stocks
         title: Stock volatility
-        url: blogs/r_projects/stock_volatility
+        url: blogs/r_projects/amsterdam
       - image: pic06.jpg
         subtitle: See some of my favorite cities
         title: Cities
