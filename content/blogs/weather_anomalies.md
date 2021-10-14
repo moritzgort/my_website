@@ -10,4 +10,4 @@ keywords: ""
 slug: weather_anomalies
 title: Weather Anomalies
 ---
-*[weather_anomalies](blogs/weather_anomalies.html)
+Some text here
