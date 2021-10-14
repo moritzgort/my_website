@@ -3,7 +3,7 @@ categories:
 - ""
 - ""
 date: "2021-10-14T22:42:51-05:00"
-description: See a selection of great Airbnbs for 2 people for 4 days.
+description: See interesting weather anomalies
 draft: false
 image: amsterdam.jpg
 keywords: ""
@@ -12,4 +12,4 @@ title: Weather Anomalies
 ---
 Some text here
 
-*[Code](content/blogs/homework2_B2_2.html)
+*[Code](content/blogs/weather_anomalies.html)
