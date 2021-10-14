@@ -2,7 +2,7 @@ baseURL: https://moritzgort.netlify.app/
 languageCode: en-us
 title: Portfolio website of Moritz
 # theme: showfolio-hugo-theme-main
-theme: showfolio-hugo-theme-main
+theme: forty
 googleAnalytics: ''
 disqusShortname: ''
 params:
@@ -83,12 +83,12 @@ params:
         subtitle: Get an insight into what I am doing
         title: About me
         url: blogs/aboutme
-      - image: pic02.jpg
-        subtitle: Feugiat Amet Tempus
+      - image: rugby.jpg
+        subtitle: See which sports I like
         title: Sports
         url: blogs/sports
       - image: pic03.jpg
-        subtitle: Lorem Etiam Nullam
+        subtitle: Take a look at some of the photos I took
         title: Photography
         url: blogs/photography
       - image: pic04.jpg
@@ -96,7 +96,7 @@ params:
         title: Amsterdam AirBnB
         url: blogs/r_projects/amsterdam
       - image: pic05.jpg
-        subtitle: Ipsum Dolor Sit Amet
+        subtitle: Get an insight into the volatility of a selection of stocks
         title: Stock volatility
         url: blogs/r_projects/stock_volatility
       - image: pic06.jpg

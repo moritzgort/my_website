@@ -5,10 +5,10 @@ categories:
 date: "2017-10-31T21:28:43-05:00"
 description: ""
 draft: false
-image: pic10.jpg
+image: moritz.jpg
 keywords: ""
-slug: ipsum
-title: Ipsum
+slug: aboutme
+title: About Me
 ---
 
-Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.
+My name is Moritz and I am from Austria. I was born in 1997. During my childhood I liked playing football. I did my undergraduate degree in Banking & Finance in Zurich, Switzerland. This year I moved to London.
