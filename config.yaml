@@ -94,15 +94,15 @@ params:
       - image: pic04.jpg
         subtitle: Nice locations for two people for four nights
         title: Amsterdam AirBnB
-        url: r_projects/amsterdam
+        url: blogs/amsterdam
       - image: pic05.jpg
         subtitle: Get an insight into the volatility of a selection of stocks
         title: Stock volatility
         url: blogs/r_projects/stock_volatility
       - image: pic06.jpg
-        subtitle: Feugiat Amet Tempus
-        title: Etiam
-        url: blogs/ipsum
+        subtitle: See some of my favorite cities
+        title: Cities
+        url: blogs/cities
   two:
     buttonText: Start here
     enable: yes
