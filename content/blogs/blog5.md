@@ -11,3 +11,5 @@ slug: weather_anomalies
 title: Weather Anomalies
 ---
 Some text here
+
+*[Code](content/blogs/homework2_B2_2.html)
