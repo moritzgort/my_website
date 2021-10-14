@@ -83,7 +83,7 @@ params:
         subtitle: Get an insight into what I am doing
         title: About me
         url: blogs/aboutme
-      - image: rugby.jpg
+      - image: sports.jpg
         subtitle: See which sports I like
         title: Sports
         url: blogs/sports
