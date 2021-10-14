@@ -16,8 +16,8 @@ params:
     address:
       - city: London
         country: United Kingdom
-        street: Street
-        title: Address
+        street: Regent's Park
+        title: London Business School
     buttonClear: Clear
     buttonSend: Send message
     email:
@@ -50,7 +50,7 @@ params:
         url: https://www.facebook.com
       - icon: fa-instagram
         label: Instagram
-        url: https://www.instagram.com
+        url: https://www.instagram.com/
       - icon: fa-github
         label: GitHub
         url: https://www.github.com
@@ -61,23 +61,21 @@ params:
   name: Moritz Gort
   navigation:
     button1:
-      - name: Get Started
-        url: blogs
+      - name: Go to R projects
+        url: blogs/r_projects
     button2:
       - name: Log In
         url: '#'
     links:
       - name: Home
         url: '#'
-      - name: Blogs
-        url: blogs
-      - name: Generic Blog
-        url: blogs/ipsum
-      - name: Elements
-        url: elements.html
+      - name: About Me
+        url: blogs/aboutme
+      - name: Photography
+        url: blogs/photography
     menu: Menu
-    subtitle: By HTML5 Up
-    title: Forty
+    subtitle: Gort
+    title: Moritz
   tiles:
     enable: yes
     showcase:
@@ -96,11 +94,11 @@ params:
       - image: pic04.jpg
         subtitle: Nice locations for two people for four nights
         title: Amsterdam AirBnB
-        url: blogs/amsterdam
+        url: blogs/r_projects/amsterdam
       - image: pic05.jpg
         subtitle: Ipsum Dolor Sit Amet
-        title: Consequat
-        url: blogs/ipsum
+        title: Stock volatility
+        url: blogs/r_projects/stock_volatility
       - image: pic06.jpg
         subtitle: Feugiat Amet Tempus
         title: Etiam
