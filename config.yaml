@@ -1,15 +1,14 @@
 baseURL: https://moritzgort.netlify.app/
 languageCode: en-us
 title: Portfolio website of Moritz
-theme: forty
+theme: showfolio-hugo-theme-main
 googleAnalytics: ''
 disqusShortname: ''
 params:
   banner:
     buttonText: Get Started
     subtitle: |-
-      A RESPONSIVE SITE TEMPLATE DESIGNED BY HTML5 UP
-      AND RELEASED UNDER THE CREATIVE COMMONS.
+      TAKE A LOOK AT MY WEBSITE TO FIND OUT MORE ABOUT MY HOBBIES AND INTERESTS
     title: Hi, my name is Moritz
   blog: {}
   contact:
