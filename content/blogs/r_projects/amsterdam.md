@@ -10,4 +10,4 @@ keywords: ""
 slug: amsterdam
 title: Amsterdam Airbnb
 ---
-[amsterdam](content/r_projects/amsterdam.html)
+*[amsterdam](content/r_projects/amsterdam.html)
