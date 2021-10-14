@@ -7,7 +7,7 @@ description: See a selection of great Airbnbs for 2 people for 4 days.
 draft: false
 image: amsterdam.jpg
 keywords: ""
-slug: amsterdam
-title: Amsterdam Airbnb
+slug: weather_anomalies
+title: Weather Anomalies
 ---
-*[amsterdam](content/r_projects/amsterdam.html)
+*[weather_anomalies](blogs/weather_anomalies.html)

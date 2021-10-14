@@ -1,0 +1,76 @@
+---
+title: "Stock return distribution"
+author: "xy"
+date: "2021-10-14"
+output:
+  html_document:
+    theme: flatly
+    highlight: zenburn
+    number_sections: yes
+    toc: yes
+    toc_float: yes
+    code_folding: show
+---
+
+
+
+<pre class="r"><code>weather &lt;- 
+  read_csv(&quot;https://data.giss.nasa.gov/gistemp/tabledata_v4/NH.Ts+dSST.csv&quot;, 
+           skip = 1, 
+           na = &quot;***&quot;)</code></pre>
+<pre class="r"><code>tidyweather &lt;- weather %&gt;% 
+  select(Year, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec) %&gt;% 
+  pivot_longer(cols = 2:13, #columns 3 to 5
+               names_to = &quot;Month&quot;,
+               values_to = &quot;delta&quot;)</code></pre>
+<pre class="r"><code>tidyweather &lt;- tidyweather %&gt;%
+  mutate(date = ymd(paste(as.character(Year), Month, &quot;1&quot;)),
+         month = month(date, label=TRUE),
+         year = year(date))
+
+ggplot(tidyweather, aes(x=date, y = delta))+
+  geom_point()+
+  geom_smooth(color=&quot;red&quot;) +
+  theme_bw() +
+  labs (
+    title = &quot;Weather Anomalies&quot;
+  )</code></pre>
+<pre class="r"><code>comparison &lt;- tidyweather %&gt;% 
+  filter(Year&gt;= 1881) %&gt;%     #remove years prior to 1881
+  #create new variable &#39;interval&#39;, and assign values based on criteria below:
+  mutate(interval = case_when(
+    Year %in% c(1881:1920) ~ &quot;1881-1920&quot;,
+    Year %in% c(1921:1950) ~ &quot;1921-1950&quot;,
+    Year %in% c(1951:1980) ~ &quot;1951-1980&quot;,
+    Year %in% c(1981:2010) ~ &quot;1981-2010&quot;,
+    TRUE ~ &quot;2011-present&quot;
+  ))</code></pre>
+<pre class="r"><code>ggplot(comparison, aes(x=delta, fill=interval))+
+  geom_density(alpha=0.2) +   #density plot with tranparency set to 20%
+  theme_bw() +                #theme
+  labs (
+    title = &quot;Density Plot for Monthly Temperature Anomalies&quot;,
+    y     = &quot;Density&quot;         #changing y-axis label to sentence case
+  )</code></pre>
+<p>So far, we have been working with monthly anomalies. However, we might be interested in average annual anomalies. We can do this by using <code>group_by()</code> and <code>summarise()</code>, followed by a scatter plot to display the result.</p>
+<pre class="r"><code>#creating yearly averages
+average_annual_anomaly &lt;- tidyweather %&gt;% 
+  group_by(Year) %&gt;%   #grouping data by Year
+  
+  # creating summaries for mean delta 
+  # use `na.rm=TRUE` to eliminate NA (not available) values 
+  summarise(annual_average_delta = mean(delta, na.rm=TRUE)) 
+
+#plotting the data:
+ggplot(average_annual_anomaly, aes(x=Year, y= annual_average_delta))+
+  geom_point()+
+  
+  #Fit the best fit line, using LOESS method
+  geom_smooth(method = &quot;LOESS&quot;) +
+  
+  #change to theme_bw() to have white background + black frame around plot
+  theme_bw() +
+  labs (
+    title = &quot;Average Yearly Anomaly&quot;,
+    y     = &quot;Average Annual Delta&quot;
+  )                         </code></pre>

@@ -92,9 +92,9 @@ params:
         title: Photography
         url: blogs/photography
       - image: pic04.jpg
-        subtitle: Nice locations for two people for four nights
-        title: Amsterdam AirBnB
-        url: blogs/amsterdam
+        subtitle: Get an insight into weather anomalies
+        title: Weather Anomalies
+        url: blogs/weather_anomalies
       - image: pic05.jpg
         subtitle: Get an insight into the volatility of a selection of stocks
         title: Stock volatility
