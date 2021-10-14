@@ -1,7 +1,8 @@
 baseURL: https://moritzgort.netlify.app/
 languageCode: en-us
 title: Portfolio website of Moritz
-theme: showfolio-hugo-theme-main
+# theme: showfolio-hugo-theme-main
+theme: forty
 googleAnalytics: ''
 disqusShortname: ''
 params:
