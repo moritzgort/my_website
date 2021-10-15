@@ -11,4 +11,4 @@ slug: weather_anomalies
 title: Weather Anomalies
 ---
 
-*[Code](content/blogs/weather_anomalies.html)
+*[Weather Anomalies](static/blogs/weather_anomalies.html)
