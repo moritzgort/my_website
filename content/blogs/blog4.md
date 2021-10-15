@@ -13,7 +13,7 @@ title: Cities
 
 Take a look at some of my favourite cities:
 
-Amsterdam
+Amsterdam:
 ![amsterdam](/img/blogs/amsterdam.jpg)
 
 Zurich:
