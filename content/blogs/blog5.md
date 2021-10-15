@@ -11,4 +11,6 @@ slug: weather_anomalies
 title: Weather Anomalies
 ---
 
+Look at these weather anomalies.
+
 *[Weather Anomalies](static/blogs/weather_anomalies.html)
