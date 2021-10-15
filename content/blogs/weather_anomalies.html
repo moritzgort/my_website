@@ -1,7 +1,7 @@
 ---
-title: "Stock return distribution"
+title: "Weather anomalies"
 author: "xy"
-date: "2021-10-14"
+date: "2021-10-15"
 output:
   html_document:
     theme: flatly
@@ -14,15 +14,24 @@ output:
 
 
 
+<blockquote>
+<p>This is an overview of weather anomalies over the time period sinnce 1881. I have included the code chunks to see how you could reproduce something similar.</p>
+</blockquote>
 <pre class="r"><code>weather &lt;- 
   read_csv(&quot;https://data.giss.nasa.gov/gistemp/tabledata_v4/NH.Ts+dSST.csv&quot;, 
            skip = 1, 
            na = &quot;***&quot;)</code></pre>
+<blockquote>
+<p>Change the data format to a “longer” table</p>
+</blockquote>
 <pre class="r"><code>tidyweather &lt;- weather %&gt;% 
   select(Year, Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec) %&gt;% 
   pivot_longer(cols = 2:13, #columns 3 to 5
                names_to = &quot;Month&quot;,
                values_to = &quot;delta&quot;)</code></pre>
+<blockquote>
+<p>Make sure, all of the dates are in the correct format and create a plot that shows weather anomalies over our time period. Can you spot a trend?</p>
+</blockquote>
 <pre class="r"><code>tidyweather &lt;- tidyweather %&gt;%
   mutate(date = ymd(paste(as.character(Year), Month, &quot;1&quot;)),
          month = month(date, label=TRUE),
@@ -36,6 +45,9 @@ ggplot(tidyweather, aes(x=date, y = delta))+
     title = &quot;Weather Anomalies&quot;
   )</code></pre>
 <p><img src="/blogs/weather_anomalies_files/figure-html/scatter_plot-1.png" width="648" style="display: block; margin: auto;" /></p>
+<blockquote>
+<p>Divide the segments into different intervals.</p>
+</blockquote>
 <pre class="r"><code>comparison &lt;- tidyweather %&gt;% 
   filter(Year&gt;= 1881) %&gt;%     #remove years prior to 1881
   #create new variable &#39;interval&#39;, and assign values based on criteria below:
@@ -46,6 +58,9 @@ ggplot(tidyweather, aes(x=date, y = delta))+
     Year %in% c(1981:2010) ~ &quot;1981-2010&quot;,
     TRUE ~ &quot;2011-present&quot;
   ))</code></pre>
+<blockquote>
+<p>Create a density plot that shows deviations for every category. Is there a visible trend?</p>
+</blockquote>
 <pre class="r"><code>ggplot(comparison, aes(x=delta, fill=interval))+
   geom_density(alpha=0.2) +   #density plot with tranparency set to 20%
   theme_bw() +                #theme
@@ -54,7 +69,9 @@ ggplot(tidyweather, aes(x=date, y = delta))+
     y     = &quot;Density&quot;         #changing y-axis label to sentence case
   )</code></pre>
 <p><img src="/blogs/weather_anomalies_files/figure-html/density_plot-1.png" width="648" style="display: block; margin: auto;" /></p>
-<p>So far, we have been working with monthly anomalies. However, we might be interested in average annual anomalies. We can do this by using <code>group_by()</code> and <code>summarise()</code>, followed by a scatter plot to display the result.</p>
+<blockquote>
+<p>Create another plot for differences from the average.</p>
+</blockquote>
 <pre class="r"><code>#creating yearly averages
 average_annual_anomaly &lt;- tidyweather %&gt;% 
   group_by(Year) %&gt;%   #grouping data by Year

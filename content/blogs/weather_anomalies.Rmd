@@ -1,5 +1,5 @@
 ---
-title: "Stock return distribution"
+title: "Weather anomalies"
 author: "xy"
 date: "`r Sys.Date()`"
 output:
@@ -46,6 +46,7 @@ library(tidyquant)
 library(rvest)
 ```
 
+> This is an overview of weather anomalies over the time period sinnce 1881. I have included the code chunks to see how you could reproduce something similar.
 
 ```{r weather_data, cache=TRUE}
 
@@ -56,6 +57,7 @@ weather <-
 
 ```
 
+> Change the data format to a "longer" table
 
 ```{r tidyweather}
 
@@ -69,7 +71,7 @@ tidyweather <- weather %>%
 ```
 
 
-
+> Make sure, all of the dates are in the correct format and create a plot that shows weather anomalies over our time period. Can you spot a trend?
 
 ```{r scatter_plot}
 
@@ -90,7 +92,7 @@ ggplot(tidyweather, aes(x=date, y = delta))+
 
 
 
-
+> Divide the segments into different intervals.
 
 ```{r intervals}
 
@@ -107,6 +109,7 @@ comparison <- tidyweather %>%
 
 ```
 
+> Create a density plot that shows deviations for every category. Is there a visible trend?
 
 ```{r density_plot}
 
@@ -120,7 +123,7 @@ ggplot(comparison, aes(x=delta, fill=interval))+
 
 ```
 
-So far, we have been working with monthly anomalies. However, we might be interested in average annual anomalies. We can do this by using `group_by()` and `summarise()`, followed by a scatter plot to display the result. 
+> Create another plot for differences from the average.
 
 ```{r averaging}
 
