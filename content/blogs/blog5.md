@@ -13,4 +13,4 @@ title: Weather Anomalies
 
 Look at these weather anomalies.
 
-*[Weather Anomalies](static/blogs/weather_anomalies.html)
+*[Weather Anomalies](content/blogs/weather_anomalies.html)
