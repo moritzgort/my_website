@@ -13,6 +13,7 @@ title: Photography
 Have a look at a selection of photos that I have taken so far:
 
 Can you guess the country of at least 3 of the places?
+
 ![barcelona](/img/blogs/barcelona.jpg)
 ![france_1](/img/blogs/france_1.jpg)
 ![france_2](/img/blogs/france_2.jpg)

@@ -80,7 +80,7 @@ params:
     enable: yes
     showcase:
       - image: lbs.jpg
-        subtitle: Get an insight into what I am doing
+        subtitle: Get an insight into who I am
         title: About me
         url: blogs/aboutme
       - image: sports.jpg
