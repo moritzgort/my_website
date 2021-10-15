@@ -5,7 +5,7 @@ categories:
 date: "2017-10-31T22:26:13-05:00"
 description: A selection of some of the photos that I have taken so far.
 draft: false
-image: 
+image: photography.jpg
 keywords: ""
 slug: photography
 title: Photography

@@ -5,7 +5,7 @@ categories:
 date: "2021-10-14T22:42:51-05:00"
 description: See some of my favorite cities here.
 draft: false
-image: 
+image: amsterdam.jpg
 keywords: ""
 slug: cities
 title: Cities

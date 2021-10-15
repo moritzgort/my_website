@@ -87,11 +87,11 @@ params:
         subtitle: See which sports I like
         title: Sports
         url: blogs/sports
-      - image: pic03.jpg
+      - image: photography.jpg
         subtitle: Take a look at some of the photos I took
         title: Photography
         url: blogs/photography
-      - image: pic04.jpg
+      - image: weather.jpg
         subtitle: Get an insight into weather anomalies
         title: Weather Anomalies
         url: blogs/weather_anomalies
