@@ -60,19 +60,19 @@ params:
   image: ''
   name: Moritz Gort
   navigation:
-    button1:
-      - name: Go to R projects
-        url: r_projects
-    button2:
-      - name: Log In
-        url: '#'
     links:
       - name: Home
         url: '#'
       - name: About Me
-        url: blogs/aboutme
+        url: blogs/aboutme$
+      - name: Sports
+        url: blogs/sports
       - name: Photography
         url: blogs/photography
+      - name: Weather anomalies
+        url: blogs/weather_anomalies
+      - name: Cities
+        url: blogs/cities
     menu: Menu
     subtitle: Gort
     title: Moritz
@@ -102,11 +102,6 @@ params:
   two:
     buttonText: Start here
     enable: yes
-    subtitle: "Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero.
-      \n    Mauris aliquet magna magna sed nunc rhoncus pharetra. \n    Pellentesque
-      condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia
-      pellentesque lorem ipsum dolor. \n    Nullam et orci eu lorem consequat tincidunt.
-      Vivamus et sagittis libero.\n    Mauris aliquet magna magna sed nunc rhoncus
-      amet pharetra et feugiat tempus."
-    title: Massa libero
+    subtitle: "If you want to get to know me better click on the button below to see some insights or fill out the form to send me a message"
+    title: Get to know me better
     url: blogs
