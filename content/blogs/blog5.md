@@ -10,6 +10,5 @@ keywords: ""
 slug: weather_anomalies
 title: Weather Anomalies
 ---
-Get some insights into weather anomalies since 1881 and how I went about creating the following plots.
 
 *[Code](content/blogs/weather_anomalies.html)

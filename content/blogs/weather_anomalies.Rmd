@@ -12,6 +12,7 @@ output:
     code_folding: show
 ---
 
+> Get some insights into weather anomalies since 1881 and how I went about creating the following plots.
 
 ```{r, setup, include=FALSE}
 knitr::opts_chunk$set(
