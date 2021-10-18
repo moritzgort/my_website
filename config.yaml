@@ -42,18 +42,15 @@ params:
         text: 'Design: '
         url: https://www.html5up.net
     social:
-      - icon: fa-twitter
-        label: Twitter
-        url: https://www.twitter.com
       - icon: fa-facebook
         label: Facebook
-        url: https://www.facebook.com
+        url: https://www.facebook.com/profile.php?id=100000682008678
       - icon: fa-instagram
         label: Instagram
-        url: https://www.instagram.com/
+        url: https://www.instagram.com/moritzgort
       - icon: fa-github
         label: GitHub
-        url: https://www.github.com
+        url: https://github.com/moritzgort
       - icon: fa-linkedin
         label: LinkedIn
         url: https://www.linkedin.com/in/moritzgort
