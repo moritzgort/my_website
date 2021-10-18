@@ -20,7 +20,7 @@ params:
         title: London Business School
     buttonClear: Clear
     buttonSend: Send message
-    email:
+    email: gort.moritz@gmail.com
       - email: moritz@gort.com
         title: Email
     enable: yes
